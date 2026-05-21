@@ -1,26 +1,17 @@
 @import "tailwindcss";
 
 @theme {
-  --color-earth-50: #f5f7f2;
-  --color-earth-100: #e6ece0;
-  --color-earth-200: #ccd9c0;
-  --color-earth-300: #a8bf95;
-  --color-earth-400: #84a36a;
-  --color-earth-500: #648849;
-  --color-earth-600: #4d6d38;
-  --color-earth-700: #3d572d;
-  --color-earth-800: #324626;
-  --color-earth-900: #2a3b20;
-  --color-ink-900: #1a1a1a;
-}
-
-:root {
-  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
-  color: #1a1a1a;
-  background: #fafaf7;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --color-earth-50: #f5f3ee;
+  --color-earth-100: #e8e2d3;
+  --color-earth-200: #d4c8ac;
+  --color-earth-300: #bda984;
+  --color-earth-400: #a68f63;
+  --color-earth-500: #8c7550;
+  --color-earth-600: #6f5d40;
+  --color-earth-700: #574832;
+  --color-earth-800: #3f3424;
+  --color-earth-900: #2a2218;
+  --color-ink-900: #15130f;
 }
 
 html,
@@ -30,31 +21,11 @@ body,
 }
 
 body {
-  margin: 0;
-}
-
-.prose-content p {
-  font-size: 1.075rem;
-  line-height: 1.75;
-  color: #333;
-  margin: 1.1em 0;
-}
-
-.prose-content h2 {
-  font-size: 1.6rem;
-  font-weight: 700;
-  margin: 2em 0 0.6em;
-  color: #1a1a1a;
-}
-
-.prose-content blockquote {
-  border-left: 4px solid var(--color-earth-500);
-  padding: 0.25em 1em;
-  margin: 1.5em 0;
-  font-style: italic;
-  color: #555;
-  background: #f5f7f2;
-  border-radius: 0 8px 8px 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: #1f1d18;
+  background: #fbfaf6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 .line-clamp-2 {
@@ -62,4 +33,31 @@ body {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+.prose-content {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: #2a2822;
+}
+
+.prose-content p {
+  margin: 1.25em 0;
+}
+
+.prose-content h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 2em 0 0.75em;
+  color: #15130f;
+  letter-spacing: -0.01em;
+}
+
+.prose-content blockquote {
+  border-left: 4px solid #8c7550;
+  padding-left: 1.25rem;
+  font-style: italic;
+  color: #4a463c;
+  margin: 1.75em 0;
+  font-size: 1.125rem;
 }
