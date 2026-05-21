@@ -1,31 +1,29 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   --color-earth-50: #f5f3ee;
   --color-earth-100: #e8e2d3;
-  --color-earth-200: #d4c8ac;
-  --color-earth-300: #bda984;
-  --color-earth-400: #a68f63;
-  --color-earth-500: #8c7550;
-  --color-earth-600: #6f5d40;
-  --color-earth-700: #574832;
-  --color-earth-800: #3f3424;
-  --color-earth-900: #2a2218;
-  --color-ink-900: #15130f;
+  --color-earth-200: #d4c8a8;
+  --color-earth-300: #b8a574;
+  --color-earth-400: #a08a52;
+  --color-earth-500: #8a7440;
+  --color-earth-600: #6b5a32;
+  --color-earth-700: #524628;
+  --color-earth-800: #3a3220;
+  --color-earth-900: #2a2418;
+  --color-ink-900: #1a1a1a;
 }
 
-html,
-body,
-#root {
+html, body, #root {
   height: 100%;
 }
 
 body {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  color: #1f1d18;
-  background: #fbfaf6;
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: #1a1a1a;
+  background-color: #fafaf7;
   -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .line-clamp-2 {
@@ -35,29 +33,37 @@ body {
   overflow: hidden;
 }
 
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .prose-content {
   font-size: 1.0625rem;
   line-height: 1.75;
-  color: #2a2822;
+  color: #2a2a2a;
 }
 
 .prose-content p {
-  margin: 1.25em 0;
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
 }
 
 .prose-content h2 {
   font-size: 1.5rem;
   font-weight: 700;
-  margin: 2em 0 0.75em;
-  color: #15130f;
+  margin-top: 2em;
+  margin-bottom: 0.75em;
   letter-spacing: -0.01em;
 }
 
 .prose-content blockquote {
-  border-left: 4px solid #8c7550;
+  border-left: 4px solid var(--color-earth-500, #8a7440);
   padding-left: 1.25rem;
+  margin: 1.5em 0;
   font-style: italic;
-  color: #4a463c;
-  margin: 1.75em 0;
-  font-size: 1.125rem;
+  color: #4a4a4a;
+  font-size: 1.15rem;
 }
