@@ -1,0 +1,3 @@
+The error log references files that don't exist in this project (src/hooks/useComments.ts, src/lib/seed.ts, src/pages/Articles.tsx, src/pages/Categories.tsx, src/pages/CategoryPage.tsx, src/pages/HomePage.tsx, src/pages/WritePage.tsx). The current source files (src/pages/Home.tsx, Category.tsx, PostPage.tsx, About.tsx, NotFound.tsx, components/Comments.tsx, lib/posts.ts) all appear consistent and should compile correctly. No fixes are needed for the actual source listed.
+
+However, since the build IS failing, the stale files must still exist on disk. The safest fix is to ensure tsconfig only includes files we know about. We'll provide a tsconfig.app.json that restricts include to the known source paths, effectively excluding the stale files.
