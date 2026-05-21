@@ -1,60 +1,57 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-earth-50: #f5f7f2;
-  --color-earth-100: #e6ece0;
-  --color-earth-200: #cdd9c1;
-  --color-earth-300: #a8bd95;
-  --color-earth-400: #82a06b;
-  --color-earth-500: #648650;
-  --color-earth-600: #4d6b3e;
-  --color-earth-700: #3d5532;
-  --color-earth-800: #32442b;
-  --color-earth-900: #2b3a26;
-  --color-ink-900: #1a1a1a;
-}
-
-:root {
-  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #1a1a1a;
-  background-color: #fafaf7;
+  --color-earth-50: #f5f3ee;
+  --color-earth-100: #e7e1d3;
+  --color-earth-200: #d2c6a8;
+  --color-earth-300: #b8a578;
+  --color-earth-400: #9d8754;
+  --color-earth-500: #806c3f;
+  --color-earth-600: #635334;
+  --color-earth-700: #4b3f29;
+  --color-earth-800: #342c1d;
+  --color-earth-900: #1f1a11;
+  --color-ink-900: #111111;
 }
 
 html,
 body,
 #root {
-  min-height: 100%;
+  height: 100%;
 }
 
 body {
-  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #fafaf7;
+  color: #1f2937;
+  -webkit-font-smoothing: antialiased;
 }
 
 .prose-content {
   font-size: 1.0625rem;
   line-height: 1.75;
-  color: #2d2d2d;
+  color: #374151;
 }
 
 .prose-content p {
-  margin: 0 0 1.25em;
+  margin-bottom: 1.25rem;
 }
 
 .prose-content h2 {
   font-size: 1.5rem;
   font-weight: 700;
-  margin: 2em 0 0.75em;
-  color: #1a1a1a;
+  color: #111827;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
 }
 
 .prose-content blockquote {
-  border-left: 4px solid var(--color-earth-500);
+  border-left: 4px solid var(--color-earth-500, #806c3f);
   padding-left: 1.25rem;
-  margin: 1.5em 0;
+  margin: 1.5rem 0;
   font-style: italic;
-  color: #4a4a4a;
+  color: #4b5563;
 }
 
 .line-clamp-2 {
